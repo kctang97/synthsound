@@ -7,17 +7,20 @@ body {
   margin: 50px auto;
   padding: 50px;
   font-family: "Lucida Console", Monaco, monospace;
-  line-height: 1.5;
-  text-align: left;
+  /* line-height: 1.5; */
+  /* text-align: left; */
 }
 
 /* sets canvas to be aligned to top right of screen
 position absolute will stop it from scrolling */
 canvas {
-  margin: auto;
   top: 0;
   left: 0;
   position: absolute;
   /* uncomment next line to position the canvas BEHIND the HTML */
   /* z-index: -1; */
+}
+
+h2 {
+  margin-top: 33%;
 }
