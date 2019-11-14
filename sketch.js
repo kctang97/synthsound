@@ -12,7 +12,7 @@ let fft;
 
 function setup() {
   createCanvas(1901, 680);
-  background(0);
+
   env = new p5.Envelope();
   s = new p5.Oscillator('square');
   fft = new p5.FFT();
@@ -21,6 +21,7 @@ function setup() {
 }
 
 function draw() {
+  background(0, 0, 0, 20);
   var vol = mic.getLevel();
   fill(random(200, 255),random(200, 255),random(200, 255), random(200, 255));
   ellipse(random(width * 2), random(height * 2), 5, 5, vol * 10, vol * 10);
